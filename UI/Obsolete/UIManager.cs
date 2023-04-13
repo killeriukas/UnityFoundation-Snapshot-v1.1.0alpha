@@ -83,13 +83,14 @@ namespace TMI.UI {
             }
             
             uiEventSystem.transform.SetParent(transform, false);
+
+            UIConfig uiConfig = ConfigManager.GetConfig<UIConfig>();
             
-            const string uiCameraTag = "UICamera";
-            GameObject foundCamera = GameObject.FindGameObjectWithTag(uiCameraTag);
+            GameObject foundCamera = GameObject.FindGameObjectWithTag(uiConfig.defaultUICameraTag);
             
             //create default UI camera
             if(foundCamera == null) {
-                uiCamera = CreateUICamera(uiCameraTag);
+                uiCamera = CreateUICamera(uiConfig.defaultUICameraTag);
             } else {
                 uiCamera = foundCamera.GetComponent<Camera>();
             }
@@ -97,10 +98,9 @@ namespace TMI.UI {
             uiCamera.transform.SetParent(transform, false);
             
             //create the main UI canvas
-            const string uiCanvasTag = "UICanvas";
-            GameObject foundCanvas = GameObject.FindGameObjectWithTag(uiCanvasTag);
+            GameObject foundCanvas = GameObject.FindGameObjectWithTag(uiConfig.defaultUICanvasTag);
             if(foundCanvas == null) {
-                uiCanvas = CreateCanvas(uiCanvasTag, uiCamera, false);
+                uiCanvas = CreateCanvas(uiConfig.defaultUICanvasTag, uiCamera, false);
             } else {
                 uiCanvas = foundCanvas.GetComponent<Canvas>();
             }
