@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a868fab8ec432764ba213fb0c97bf968
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - outputInspector: {fileID: 9197481963319205126, guid: 2c4c6cc111d5a6c42a4813df83740cd1, type: 3}
+  - categoryInspector: {fileID: 9197481963319205126, guid: a776a3a8cecc501459807041c6dc080e, type: 3}
+  - moduleInspector: {fileID: 9197481963319205126, guid: 9ce0d259fd5b6b34abf6f92f58426b1a, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

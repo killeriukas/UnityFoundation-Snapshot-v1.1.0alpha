@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Label tabindex="-1" text="Log Categories" display-tooltip-when-elided="true" />
+    <ui:GroupBox />
+    <ui:GroupBox>
+        <ui:ListView focusable="true" name="category-list" virtualization-method="DynamicHeight" binding-path="logSettingsList" show-bound-collection-size="false" show-foldout-header="true" header-title="Log Category" />
+    </ui:GroupBox>
+</ui:UXML>

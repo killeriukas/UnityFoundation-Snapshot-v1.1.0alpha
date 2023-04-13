@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:ListView focusable="true" name="config-list" show-add-remove-footer="true" virtualization-method="DynamicHeight" />
+    <ui:GroupBox>
+        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
+        <ui:Label tabindex="-1" text="This is UI from UI Builder" display-tooltip-when-elided="true" />
+    </ui:GroupBox>
+</ui:UXML>

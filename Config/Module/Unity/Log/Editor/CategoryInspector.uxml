@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement style="flex-direction: row;">
+        <ui:Toggle name="entry-toggle" binding-path="enabled" />
+        <ui:Label tabindex="-1" text="Category Name" display-tooltip-when-elided="true" name="category-name" binding-path="categoryName" style="margin-left: 5px;" />
+    </ui:VisualElement>
+</ui:UXML>
